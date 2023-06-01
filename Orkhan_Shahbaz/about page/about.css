@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header .container {
+    padding: 20px 5%;
+    max-width: 100%;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+header{
+    background-color:#E2B114;
+}
+
+header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header .navbar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+header .navbar .navbar-nav .nav-item .active {
+    background-color: #fa7161;
+    color: #fff !important;
+    border-radius: 10px;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 20px;
+    padding: 13px 15px;
+    display: inline-block;
+}
+
+header .navbar .navbar-nav .nav-item:hover {
+    background-color: #fa7161;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+header .navbar .navbar-nav .nav-item:hover .nav-link {
+    color: #fff;
+}
+
+header .navbar .common {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navbar .social-icons a {
+    padding-left: 5px;
+    color: #fff;
+}
+
+header .navbar .social-icons a i {
+    font-size: 20px;
+}
+
+header .navbar .social-icons a i:hover {
+    color: #fa7161;
+}
+
+.section-main {
+    background-color: #fa7161;
+    padding-top: 10%;
+}
+
+.section-main .section-title {
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    padding-bottom: 10%;
+}
+
+.section-title h1 {
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.17em;
+}
+
+.section-title h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.59em;
+    letter-spacing: 0px;
+}
+
+.about-info {
+    display: flex;
+    gap: 10%;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-info-title {
+    padding-top: 7%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0d1f;
+}
+
+.about-info-title p {
+    color: #636477;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-info button {
+    padding: 20px 70px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #fa7161;
+}
+
+
+.about-info .about-photo {
+    position: relative;
+    bottom: 50px;
+}
+
+.about-cardInfo {
+    background-color: #f5f6f8;
+    padding-top: 8%;
+    padding-bottom: 15%;
+}
+
+.about-cardInfo .cardInfo-title {
+    text-align: center;
+    align-items: center;
+}
+
+.cardInfo-title h1 {
+    color: #0c0d1f;
+    font-family: "Red Hat Display", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2em;
+    padding-bottom: 30px;
+}
+
+.cardInfo-title p {
+    color: #636477;
+    font-family: "Red Hat Display", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.59em;
+}
+
+.top-card {
+    display: flex;
+    padding-top: 0%;
+    gap: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-card .card-1 {
+    background-color: white;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    width: 350px;
+    height: 350px;
+}
+
+.card-1 .card-1-title {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    color: #fa7161;
+    font-family: "Red Hat Display", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-1 .card-hood {
+    padding-bottom: 15px;
+}
+
+.card-1 .cardInformation {
+    color: #636477;
+    font-family: "Red Hat Display", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+}
+
+footer {
+    height: 100vh;
+}
+
+footer .container {
+    padding: 20px 5%;
+}
+
+footer .container .content .foot-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer .container .content .foot-top .foot-left .employees {
+    display: block;
+    padding: 10px 0;
+    color: #fa7a6c;
+}
+
+footer .container .content .foot-top .foot-left .employees:hover {
+    color: #000;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+footer .container .content .foot-top .foot-left h2 a {
+    display: block;
+    color: #3d3c3c;
+    font-size: 34px;
+    font-weight: 800;
+    width: 400px;
+}
+
+footer .container .content .foot-top .foot-left h2 a:hover {
+    color: #fa7a6c;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+footer .container .content .foot-top .foot-right .right-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+footer .container .content .foot-top .foot-right .right-ul ul h2 {
+    color: #0c0d1f;
+    font-family: "Red Hat Display", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+footer .container .content .foot-top .foot-right .right-ul ul li {
+    padding: 3px 0;
+}
+
+footer .container .content .foot-top .foot-right .right-ul ul li a {
+    font-size: 19px;
+    line-height: 2em;
+    color: #6f6f70;
+}
+
+footer .container .content .foot-top .foot-right .right-ul ul li a:hover {
+    color: #fa7a6c;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+footer .container .content .foot-h2 .signup {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer .container .content .foot-h2 input {
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    width: 75%;
+}
+
+footer .container .content .foot-h2 input:focus {
+    outline: none;
+}
+
+footer .container .content .foot-h2 button {
+    border: none;
+    color: #fa7a6c;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+footer .container .content .foot-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+footer .container .content .foot-bottom .foot-text {
+    width: 30%;
+}
+
+footer .container .content .foot-bottom .foot-text p a {
+    color: #fa7a6c;
+}
+
+footer .container .content .foot-bottom .foot-text p {
+    color: black;
+}
+
+footer .container .content .foot-bottom .foot-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+footer .container .content .foot-bottom .foot-icon a {
+    color: #000;
+    font-size: 22px;
+}
+
+footer .container .content .foot-bottom .foot-icon a:hover {
+    color: #fa7a6c;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+
+/* CSS */
